@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/drawable/collapsed_toolbar_background.xml" value="0.1" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/drawable/ic_back_button.xml" value="0.1575" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/drawable/ic_back_button_with_back.xml" value="0.1575" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/drawable/ic_email.xml" value="0.1575" />
@@ -12,7 +13,7 @@
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.14375" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/activity_contact_us.xml" value="0.14" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/activity_details.xml" value="0.16" />
-        <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/activity_pay_stub.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/activity_scrolling.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Adeel/ERSMobile/app/src/main/res/layout/content_scrolling.xml" value="0.19166666666666668" />

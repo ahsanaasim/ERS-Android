@@ -31,7 +31,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
-    LinearLayout rl_footer;
     ArrayList<OptionsModel> optionsArrayList;
     ArrayList<TipsModel> tipsArrayList;
     ArrayList<String> arrayList;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        rl_footer = binding.linear;
         optionsArrayList = new ArrayList<>();
         tipsArrayList = new ArrayList<>();
         arrayList = new ArrayList<>();
@@ -53,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStateChanged(AppBarLayout appBarLayout, State state) {
                 Log.d("STATE", state.name());
-                if (!state.name().equalsIgnoreCase("COLLAPSED")){
-                    binding.text.setVisibility(View.VISIBLE);
-                }else{
+                if (!state.name().equalsIgnoreCase("EXPANDED")){
                     binding.text.setVisibility(View.GONE);
+                }else{
+                    binding.text.setVisibility(View.VISIBLE);
                 }
             }
         });

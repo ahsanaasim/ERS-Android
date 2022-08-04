@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:paddingVertical="10dp"
+            android:paddingVertical="@dimen/_8sdp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -36,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingBottom="20dp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
         android:layoutAnimation="@anim/layout_animation"
         android:layout_below="@+id/toolbar"
         android:id="@+id/postsRecycler"/>

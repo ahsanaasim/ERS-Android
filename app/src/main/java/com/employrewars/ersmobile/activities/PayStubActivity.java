@@ -36,9 +36,9 @@ public class PayStubActivity extends AppCompatActivity {
     private void addData(){
         arrayList.clear();
         String str = "When You Overthink, Thoughts Run Circles\nAround Your Head And You Find Yourself Stuck In Reverse Unable To Move Forward. More So, You Start Coming Up With Bizarre Ideas That Totally Contradict Each other\n“I’m So Excited for this job interview” Transformas into “I wonder if they liked me” And then mprphs into “Oh, I’m so stupid! I shouldn’t have said that! I’m definitely not getting an offer”\nYou Start Blaming Yourself For Things You Didn't\nDo And Worrying About Scenarios That May Or May Not Happen.\nOverthinking Is Simoly The Act Of Thinkina About Something Too Much Or For Too Long.”";
-        ImagesModel imagesModel = new ImagesModel(R.drawable.image_1,"Article","GOV.com","22 july","Ticket to Work | How it Works",str);
-        ImagesModel imagesModel1 = new ImagesModel(R.drawable.image_2,"Video","APK.com","26 july","Ticket to Work | How it Works",str);
-        ImagesModel imagesModel2 = new ImagesModel(R.drawable.image_1,"Article","GOV.com","23 july","Ticket to Work | How it Works",str);
+        ImagesModel imagesModel = new ImagesModel(R.drawable.image_1,"Article","GOV.com","22 july","Ticket to Work | How it Works",str+str);
+        ImagesModel imagesModel1 = new ImagesModel(R.drawable.image_2,"Video","APK.com","26 july","Ticket to Work | How it Works",str+str);
+        ImagesModel imagesModel2 = new ImagesModel(R.drawable.image_1,"Article","GOV.com","23 july","Ticket to Work | How it Works",str+str);
         arrayList.add(imagesModel);
         arrayList.add(imagesModel1);
         arrayList.add(imagesModel2);

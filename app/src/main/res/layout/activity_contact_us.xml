@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:paddingVertical="10dp"
+            android:paddingVertical="@dimen/_8sdp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -38,29 +38,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:layout_marginHorizontal="15dp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="@dimen/_70sdp"
             android:text="@string/contact_us"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="@dimen/_24sdp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:text="@string/we_re_looking_foward_to_talking_with_you"
             android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:text="@string/contact_detail"
             android:textSize="12sp" />
 
@@ -68,7 +68,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:layout_below="@+id/linear"
         android:layoutAnimation="@anim/layout_animation"
         android:layout_height="wrap_content"

@@ -4,15 +4,15 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/tips_background"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="12dp"
-    android:layout_marginStart="10dp">
+    app:cardCornerRadius="@dimen/_16sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_8sdp">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="@dimen/_16sdp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -21,7 +21,7 @@
             android:text="@string/contact_us"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/_12sdp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
             android:id="@+id/desc"
             android:text="@string/contact"
             android:textColor="@color/white"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/_12sdp"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
