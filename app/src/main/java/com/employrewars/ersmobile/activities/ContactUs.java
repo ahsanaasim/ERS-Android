@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.employrewars.ersmobile.MainActivity;
 import com.employrewars.ersmobile.R;
@@ -20,6 +22,7 @@ public class ContactUs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = ActivityContactUsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         optionsArrayList = new ArrayList<>();

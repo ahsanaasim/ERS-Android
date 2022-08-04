@@ -6,8 +6,12 @@ import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.res.ColorStateList;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
@@ -18,6 +22,8 @@ import com.employrewars.ersmobile.adapters.TipsAdapter;
 import com.employrewars.ersmobile.databinding.ActivityMainBinding;
 import com.employrewars.ersmobile.models.OptionsModel;
 import com.employrewars.ersmobile.models.TipsModel;
+import com.employrewars.ersmobile.utils.AppBarStateChangeListener;
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.util.ArrayList;
@@ -32,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -41,18 +48,18 @@ public class MainActivity extends AppCompatActivity {
         arrayList = new ArrayList<>();
         addData();
         dataToNaviAdapter();
-        binding.scrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+
+        binding.appBar.addOnOffsetChangedListener(new AppBarStateChangeListener() {
             @Override
-            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                if (binding.text.getVisibility()== View.VISIBLE){
-                    binding.text.setVisibility(View.GONE);
-                }else {
+            public void onStateChanged(AppBarLayout appBarLayout, State state) {
+                Log.d("STATE", state.name());
+                if (!state.name().equalsIgnoreCase("COLLAPSED")){
                     binding.text.setVisibility(View.VISIBLE);
+                }else{
+                    binding.text.setVisibility(View.GONE);
                 }
-                //Do something
             }
         });
-
         binding.navigation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addData(){
+        tipsArrayList.clear();
         TipsModel tipsModel = new TipsModel("Daily Quick Tip","Toggle the navigation to \nsee notifications");
         TipsModel tipsModel1 = new TipsModel("Have new paystubs?","Toggle the navigation to \nsee notifications");
         TipsModel tipsModel2 = new TipsModel("Daily Quick Tip","Go to settings to watch \nthe tour again");
@@ -89,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void dataToNotiAdapter(){
+        arrayList.clear();
         arrayList.add("Welcome to ERS Mobile!");
         arrayList.add("Click here to explore the\nPaystub Camera");
         arrayList.add("Test!");
@@ -99,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void dataToNaviAdapter(){
+        optionsArrayList.clear();
         OptionsModel optionsModel = new OptionsModel(R.drawable.ic_contact_us,"Contact Us",getString(R.string.contact));
         optionsArrayList.add(optionsModel);
         OptionsModel optionsModel1 = new OptionsModel(R.drawable.ic_email,"Paystub Camera",getString(R.string.paystubs));

@@ -100,10 +100,10 @@
     <string name="email">careerservices@employreward.com</string>
     <string name="phone">+1 (888) 322-9570</string>
     <string name="web">https://employreward.com</string>
-    <string name="contact">Need help? Click here to get in contact \nwith a representative</string>
-    <string name="paystubs">Capture and upload your paystubs \nin app</string>
-    <string name="resources">Browse all ERS resources that are \navailable to you</string>
-    <string name="paystubs_tip">"My paystubs" allows\nyou to upload your</string>
+    <string name="contact">Need help? Click here to get in contact with a representative</string>
+    <string name="paystubs">Capture and upload your paystubs in app</string>
+    <string name="resources">Browse all ERS resources that are available to you</string>
+    <string name="paystubs_tip">"My paystubs" allows you to upload your</string>
     <string name="we_re_looking_foward_to_talking_with_you">We\'re looking forward to talking with you!</string>
     <string name="contact_detail">Shoot us an email or send us a text message and our representatives will get back to you as soon as we can.</string>
 </resources>
