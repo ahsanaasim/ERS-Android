@@ -32,12 +32,19 @@
                 android:src="@drawable/heart_logo"/>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
-
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_below="@+id/toolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <LinearLayout
         android:id="@+id/linear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent"
         android:layout_marginHorizontal="@dimen/_12sdp"
         android:orientation="vertical">
 
@@ -69,8 +76,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/_16sdp"
-        android:layout_below="@+id/linear"
         android:layoutAnimation="@anim/layout_animation"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/contactRecycler"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
 </RelativeLayout>
