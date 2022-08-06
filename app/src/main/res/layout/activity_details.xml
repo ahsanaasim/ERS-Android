@@ -20,6 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_280sdp" />
     <RelativeLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_8sdp">
@@ -40,11 +41,13 @@
     </RelativeLayout>
 
             <ScrollView
+                android:layout_below="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="none"
-                android:paddingTop="@dimen/_250sdp"
-                android:clipToPadding="false">
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/_200sdp"
+                android:scrollbars="none">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -105,15 +108,15 @@
                         android:textColor="@color/black" />
 
                     <TextView
-                        android:paddingBottom="@dimen/_12sdp"
                         android:id="@+id/desc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/_16sdp"
+                        android:paddingBottom="@dimen/_12sdp"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
-        </ScrollView>
+            </ScrollView>
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>
